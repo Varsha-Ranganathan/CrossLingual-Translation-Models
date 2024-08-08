@@ -71,7 +71,9 @@ Fine-Tuned Models:
 Goal: Investigate the effectiveness of sequential fine-tuning in transferring cross-lingual capabilities to low-resource languages.
 
 Base Model: meta-llama/Llama-2-7b-hf
-Fine-Tuned Model: finetuned-llama2-7b-en-hi
+
+Fine-Tuned Model: [finetuned-llama2-7b-en-hi](https://huggingface.co/ritika-kumar/finetuned-llama2-7b-en-hi)
+
 Goal: Investigate the effectiveness of sequential fine-tuning in transferring cross-lingual capabilities to low-resource languages using PEFT LORA.
 
 ## Benchmarks and Results
