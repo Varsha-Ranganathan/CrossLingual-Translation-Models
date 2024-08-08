@@ -84,7 +84,7 @@ To evaluate the performance of the fine-tuned models, we utilized two rigorous b
 
 The Tatoeba benchmark is widely used for evaluating translation models and measures the BLEU score, which indicates how well the model-generated translations match the reference translations.
 
-**IN-22 Benchmark
+**IN-22 Benchmark**
 
 The IN-22 benchmark is another critical evaluation metric specifically designed for assessing Indian languages. It helps in understanding the model's effectiveness in handling the unique linguistic features and complexities of Indian languages.
 
