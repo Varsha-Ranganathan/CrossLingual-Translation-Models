@@ -6,27 +6,36 @@ This repository contains the code and resources for exploring the cross-lingual 
 
 ## Objectives
 Evaluate Language Pair Flexibility: Assess the ability of models pre-trained on specific language pairs to adapt to new language pairs through fine-tuning.
+
 Enhance Cross-Lingual Capabilities: Explore the performance improvements of multilingual models when fine-tuned on Indian languages.
+
 Transfer Learning to Low-Resource Languages: Investigate the effectiveness of sequential fine-tuning in transferring cross-lingual capabilities to low-resource Indian languages.
 
 ## Models Used
 **Helsinki-NLP/opus-mt:** A robust transformer-based model pre-trained on various language pairs.
+
 **mBART50:** A multilingual sequence-to-sequence model pre-trained on 50 languages.
+
 **Llama-2:** The second generation of the LLaMA family, featuring advanced pre-training techniques and optimized for diverse tasks.
 
 ## Datasets
 **AI4Bharat/Samanantar:** The largest parallel corpus for Indian languages, covering Hindi, Tamil, Telugu, and more.
+
 **CFILT IITB English-Hindi:** A rich dataset for English-Hindi translations, adding diversity to our training data.
+
 **WMT News Dataset:** Domain-specific dataset for English-Gujarati, used to validate language pair flexibility and cross-lingual capability transfer.
 
 ## Methodologies
 **Language Pair Flexibility**
 Base Model: Helsinki-NLP/opus-mt-en-fr
+
 Fine-Tuned Model: [finetuned-opusmt-en-fr-hi](https://huggingface.co/ritika-kumar/finetuned-opusmt-en-fr-hi)
+
 Goal: Validate how well the model adapts to new language pairs through fine-tuning.
 
 **Cross-Lingual Capabilities of Multilingual Models**
 Base Model: Helsinki-NLP/opus-mt-en-mul
+
 Fine-Tuned Models: 
 - [finetuned-opusmt-en-to-hi](https://huggingface.co/Varsha00/finetuned-opusmt-en-to-hi)
 - [finetuned-opusmt-en-to-ta](https://huggingface.co/Varsha00/finetuned-opusmt-en-to-ta)
@@ -36,6 +45,7 @@ Goal: Assess the performance improvements of multilingual models when fine-tuned
 
 **Cross-Lingual Capability Transfer to Low-Resource Indian Languages**
 Base Model: Helsinki-NLP/opus-mt-en-mul
+
 Fine-Tuned Models: 
 - [finetuned-opusmt-en-hi-gu](https://huggingface.co/Varsha00/finetuned-opusmt-en-hi-gu)
 - [finetuned-opusmt-en-ta-gu](https://huggingface.co/Varsha00/finetuned-opusmt-en-ta-gu)
@@ -109,8 +119,11 @@ The comparative analysis of benchmarks for the mBART50 and Llama models highligh
 This repository is organized to facilitate easy access to all necessary resources for exploring cross-lingual capabilities in Indian language translation tasks. The following sections will help you navigate through the contents:
 
 **HF Links:** Direct links to the Hugging Face models are provided in the README, allowing you to access the fine-tuned models directly.
+
 **EDA Code:** The exploratory data analysis (EDA) code is also available within the notebooks, providing insights into the datasets used for training and evaluation.
+
 **Models:** The models folder includes the training code necessary for fine-tuning the models on various datasets.
+
 **Benchmark Evaluations:** The benchmark_evaluations folder contains the evaluation code used to assess the performance of the models against the Tatoeba and IN-22 benchmarks.
 
 By navigating through these sections, you can efficiently access and utilize the provided resources to replicate and extend the study.
